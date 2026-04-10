@@ -36,7 +36,7 @@ const Home = () => {
   const galleryItems = [
     {
       id: 1,
-      image: "https://manvikdoorframes.com/wp-content/uploads/2021/01/Untitled-design.jpg",
+      image: "https://5.imimg.com/data5/SELLER/Default/2023/9/340224581/RL/EZ/NA/81407436/powder-coated-galvanized-single-door.jpg",
       title: "GREYSTONE CHAUGATH",
       description: "5×2.5 inch & 6×2.5 inch | Height customizable | 25 year guarantee | Termite proof | Water proof | Rust free | High density"
     },
