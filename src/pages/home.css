@@ -3244,3 +3244,39 @@
     font-size: 0.65rem;
   }
 }
+/* Rating Stars - 4.5 Stars */
+.rating {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* For 4.5 stars - using half star */
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #ffc107 90%, #e4e5e9 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Alternative simpler approach - replace the stars span content */
+.rating-value {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.rating-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}

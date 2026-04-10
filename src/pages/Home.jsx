@@ -216,8 +216,8 @@ const Home = () => {
           <p>OPEN YOUR MIND TO THE<br />POSSIBILITY OF VENEERS</p>
           <Link to="/products" className="btn-primary">READ MORE</Link>
           <div className="rating">
-            <span className="stars">★★★★★</span>
-            <span className="rating-value">4.95</span>
+            <span className="stars"></span>
+            <span className="rating-value">4.5</span>
             <span className="rating-label">Google Rating</span>
           </div>
         </div>
