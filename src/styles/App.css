@@ -1,0 +1,125 @@
+/* styles/App.css - Loader Animation */
+
+/* Loader Container */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #faf8f4 0%, #f0e9df 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 0.5s ease forwards;
+    animation-delay: 3s;
+    margin-top: -120px;
+  }
+  
+  .loader-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .loader-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  /* Animation classes for the loader */
+  .loader-image.scale-small {
+    transform: scale(0.3);
+    opacity: 0.7;
+  }
+  
+  .loader-image.scale-large {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .loader-image.scale-stable {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .loader-text {
+    font-size: 1rem;
+    color: #c49a6c;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    animation: pulse 1.5s ease-in-out infinite;
+    margin-top: -100px;
+  }
+  
+  /* Keyframe animations */
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  /* Optional: Add a subtle bounce to the container */
+  @keyframes gentleBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .loader-wrapper {
+    animation: gentleBounce 2s ease-in-out infinite;
+  }
+  
+  /* For the bounce animation to stop after loader completes */
+  .loader-container.loader-hidden .loader-wrapper {
+    animation: none;
+  }
+  
+  /* Responsive loader */
+  @media (max-width: 768px) {
+    .loader-image {
+      width: 260px;
+      height: 260px;
+    }
+    
+    .loader-text {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loader-image {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .loader-text {
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+    }
+  }

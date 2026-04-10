@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+/* styles/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f0e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Global Button Styles */
+.btn-primary {
+  background-color: #c49a6c;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1.5px;
+  font-family: inherit;
+}
+
+.btn-primary:hover {
+  background-color: #a87b4e;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1.5px solid #c49a6c;
+  padding: 0.7rem 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #c49a6c;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1.5px;
+  font-family: inherit;
+}
+
+.btn-secondary:hover {
+  background: #c49a6c;
+  color: white;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* styles/App.css - Loader Animation */
+
+/* Loader Container */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #faf8f4 0%, #f0e9df 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeOut 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+.loader-wrapper {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.loader-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-@keyframes App-logo-spin {
+/* Animation classes for the loader */
+.loader-image.scale-small {
+  transform: scale(0.3);
+  opacity: 0.7;
+}
+
+.loader-image.scale-large {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.loader-image.scale-stable {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.loader-text {
+  font-size: 1rem;
+  color: #c49a6c;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+  animation: pulse 1.5s ease-in-out infinite;
+  margin-top: 1rem;
+}
+
+/* Keyframe animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
+    visibility: visible;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Optional: Add a subtle bounce to the container */
+@keyframes gentleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.loader-wrapper {
+  animation: gentleBounce 2s ease-in-out infinite;
+}
+
+/* For the bounce animation to stop after loader completes */
+.loader-container.loader-hidden .loader-wrapper {
+  animation: none;
+}
+
+/* Responsive loader */
+@media (max-width: 768px) {
+  .loader-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .loader-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loader-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .loader-text {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
   }
 }

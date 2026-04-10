@@ -1,0 +1,2674 @@
+/* pages/Home.css */
+/* Hero Section */
+.hero {
+    background-image: url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-position: center 30%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  
+  .rating {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 1rem;
+  }
+  
+  .rating-value {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .rating-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 5rem 3rem;
+    background-color: #faf8f4;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: #2c2418;
+    letter-spacing: 3px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .service-card h3 {
+    font-size: 0.9rem;
+    color: #5c4b34;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Dedicated Section */
+  .dedicated {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dedicated-content h2 {
+    font-size: 2rem;
+    color: #2c2418;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  .dedicated-content > p {
+    color: #6b5a48;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  
+  .features-list {
+    margin-bottom: 2rem;
+  }
+  
+  .feature-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e5dfd5;
+    font-weight: 500;
+    color: #4a3a2a;
+    font-size: 0.9rem;
+  }
+  
+  .dedicated-image {
+    background-image: url('https://images.pexels.com/photos/1441036/pexels-photo-1441036.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    border-radius: 4px;
+  }
+  
+  /* Sustainable Section */
+  .sustainable {
+    padding: 5rem 3rem;
+    background-color: #f5f0e8;
+    text-align: center;
+  }
+  
+  .sustainable h2 {
+    font-size: 1.8rem;
+    color: #2c2418;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    color: #7a6852;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  .sustainable-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sustainable-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .sustainable-card h3 {
+    color: #c49a6c;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .sustainable-card p {
+    color: #6b5a48;
+    font-size: 0.85rem;
+  }
+  
+  /* Handcrafted Section */
+  .handcrafted {
+    background-image: url('https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 3rem;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .handcrafted::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  
+  .handcrafted-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .handcrafted-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .handcrafted-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 500;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    padding: 4rem 3rem;
+    background-color: #ffffff;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c2418;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+    color: #8b7a64;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sustainable-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .services,
+    .sustainable,
+    .stats-section,
+    .dedicated {
+      padding: 2rem 1rem;
+    }
+    
+    .dedicated {
+      grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* pages/home.css */
+
+/* Carousel Section */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .carousel-content {
+    color: white;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .carousel-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #c49a6c;
+  }
+  
+  /* Featured Products Section */
+  .featured-products {
+    padding: 5rem 3rem;
+    background-color: #faf8f4;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+    color: #2c2418;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-header p {
+    color: #6b5a48;
+    margin-bottom: 1rem;
+  }
+  
+  .refresh-btn {
+    background: #c49a6c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+  }
+  
+  .refresh-btn:hover {
+    background: #a87b4e;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .out-of-stock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+  }
+  
+  .product-info {
+    padding: 1.2rem;
+  }
+  
+  .product-category {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: #c49a6c;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    color: #2c2418;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+  
+  .product-description {
+    font-size: 0.75rem;
+    color: #6b5a48;
+    margin-bottom: 1rem;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .product-price {
+    font-weight: 700;
+    color: #c49a6c;
+  }
+  
+  .btn-view-product {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #c49a6c;
+    padding: 0.6rem;
+    text-decoration: none;
+    color: #c49a6c;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    border-radius: 4px;
+  }
+  
+  .btn-view-product:hover {
+    background: #c49a6c;
+    color: white;
+  }
+  
+  /* Sticky Background Section */
+  .sticky-background {
+    position: relative;
+    height: 700px;
+    background-image: url('https://plyneer.com/cdn/shop/articles/B0_5c915ff1-d38f-4d00-96fa-a2c6cc20324e.png?v=1743686859&width=2048');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sticky-container {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sticky-content {
+
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .sticky-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+  }
+  
+  .sticky-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .industry-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .industry-stat {
+    text-align: center;
+  }
+  
+  .industry-stat .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #c49a6c;
+  }
+  
+  .industry-stat .stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .btn-primary-outline {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #c49a6c;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+  }
+  
+  .btn-primary-outline:hover {
+    background: #c49a6c;
+    color: white;
+  }
+  
+  /* Plywood Industry Section */
+  .plywood-industry {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+  }
+  
+  .industry-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .industry-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c2418;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+  }
+  
+  .industry-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .industry-feature {
+    text-align: center;
+    padding: 2rem;
+    background: #faf8f4;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .industry-feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .industry-feature h3 {
+    color: #c49a6c;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .industry-feature p {
+    color: #6b5a48;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  /* Hero Section (Original) */
+  .hero {
+    background-image: url('https://wigwamply.com/wp-content/uploads/2024/12/Benefits-of-Using-Green-Plywood-in-Construction-and-Furniture-Making.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  
+  .rating {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 1rem;
+  }
+  
+  .rating-value {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .rating-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 5rem 3rem;
+    background-color: #faf8f4;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: #2c2418;
+    letter-spacing: 3px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .service-card h3 {
+    font-size: 0.9rem;
+    color: #5c4b34;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Dedicated Section */
+  .dedicated {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dedicated-content h2 {
+    font-size: 2rem;
+    color: #2c2418;
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+  }
+  
+  .dedicated-content > p {
+    color: #6b5a48;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  
+  .features-list {
+    margin-bottom: 2rem;
+  }
+  
+  .feature-item {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #e5dfd5;
+    font-weight: 500;
+    color: #4a3a2a;
+    font-size: 0.9rem;
+  }
+  
+  .dedicated-image {
+    background-image: url('https://www.greenply.com:5001/originalfile1773135577931-6214.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    border-radius: 4px;
+  }
+  
+  /* Sustainable Section */
+  .sustainable {
+    padding: 5rem 3rem;
+    background-color: #f5f0e8;
+    text-align: center;
+  }
+  
+  .sustainable h2 {
+    font-size: 1.8rem;
+    color: #2c2418;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    color: #7a6852;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+  }
+  
+  .sustainable-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sustainable-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .sustainable-card h3 {
+    color: #c49a6c;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .sustainable-card p {
+    color: #6b5a48;
+    font-size: 0.85rem;
+  }
+  
+  /* Handcrafted Section */
+  .handcrafted {
+    background-image: url('https://www.greenply.com:5001/originalfile1773136214998-8585.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 3rem;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .handcrafted::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  
+  .handcrafted-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .handcrafted-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .handcrafted-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 500;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    padding: 4rem 3rem;
+    background-color: #ffffff;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c2418;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+    color: #8b7a64;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .sustainable-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .industry-features {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .carousel-content h2 {
+      font-size: 2rem;
+    }
+    
+    .sticky-content h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .services,
+    .sustainable,
+    .stats-section,
+    .dedicated,
+    .featured-products,
+    .plywood-industry {
+      padding: 2rem 1rem;
+    }
+    
+    .dedicated {
+      grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .industry-features {
+      grid-template-columns: 1fr;
+    }
+    
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .carousel-image-wrapper {
+      height: 60vh;
+    }
+    
+    .carousel-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+    
+    .industry-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  /* pages/home.css - Updated Carousel Section */
+
+/* Carousel Section - Full width and height */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .carousel-content {
+    color: white;
+    animation: fadeInUp 1s ease;
+    padding: 0 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .carousel-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+  }
+  
+  .dot.active {
+    background: #c49a6c;
+    width: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Responsive - Full height on mobile too */
+  @media (max-width: 768px) {
+    .carousel-section {
+      height: 100vh;
+      min-height: 100vh;
+    }
+    
+    .carousel-image-wrapper {
+      height: 100%;
+    }
+    
+    .carousel-content h2 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    
+    .carousel-content p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .carousel-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    
+    .prev {
+      left: 10px;
+    }
+    
+    .next {
+      right: 10px;
+    }
+    
+    .carousel-dots {
+      bottom: 20px;
+      gap: 8px;
+    }
+    
+    .dot {
+      width: 8px;
+      height: 8px;
+    }
+    
+    .dot.active {
+      width: 20px;
+    }
+  }
+  
+  /* Tablet View */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-section {
+      height: 100vh;
+    }
+    
+    .carousel-content h2 {
+      font-size: 2.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small Mobile Devices */
+  @media (max-width: 480px) {
+    .carousel-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 0.8rem;
+    }
+    
+    .carousel-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Landscape Mode on Mobile */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .carousel-section {
+      height: 100vh;
+    }
+    
+    .carousel-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Ensure no white space around carousel */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .home {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Add this to your pages/home.css file */
+
+/* Image Gallery Section - Vertical text, horizontal full image on hover */
+.image-gallery-section {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 500px;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Default: compact vertical label view */
+    min-width: 80px;
+    max-width: 100px;
+  }
+  
+  /* Label styling - vertical text mode */
+  .gallery-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    writing-mode: horizontal-tb;
+  }
+  
+  .gallery-label h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+  }
+  
+  .gallery-label p {
+    font-size: 0.7rem;
+    margin: 0.3rem 0 0;
+    opacity: 0.8;
+    display: none;
+  }
+  
+  /* Hover effect - expand to full width and show full image */
+  .gallery-item:hover {
+    flex: 4;
+    max-width: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery-item:hover .gallery-label {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    padding: 1.5rem;
+    text-align: left;
+    writing-mode: horizontal-tb;
+    backdrop-filter: blur(8px);
+  }
+  
+  .gallery-item:hover .gallery-label h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-item:hover .gallery-label p {
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  /* Optional overlay effect on hover */
+  .gallery-overlay-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .gallery-item:hover .gallery-overlay-hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .image-gallery-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .gallery-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .gallery-item {
+      min-width: 100%;
+      max-width: none;
+      height: 80px;
+      transition: height 0.3s ease;
+    }
+    
+    .gallery-label {
+      writing-mode: horizontal-tb;
+      text-align: left;
+      padding: 0.8rem 1rem;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.9rem;
+    }
+    
+    .gallery-label p {
+      display: none;
+    }
+    
+    .gallery-item:hover {
+      flex: none;
+      height: 250px;
+      max-width: none;
+    }
+    
+    .gallery-item:hover .gallery-label {
+      padding: 1rem;
+    }
+    
+    .gallery-item:hover .gallery-label h3 {
+      font-size: 1rem;
+    }
+    
+    .gallery-item:hover .gallery-label p {
+      display: block;
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-gallery-section {
+      padding: 2rem 1rem;
+    }
+    
+    .gallery-item {
+      height: 70px;
+    }
+    
+    .gallery-item:hover {
+      height: 220px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .gallery-item {
+      height: 60px;
+    }
+    
+    .gallery-item:hover {
+      height: 200px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Image Gallery Section - Centered Layout */
+.image-gallery-section {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Default: compact vertical label view */
+    min-width: 120px;
+    max-width: 250px;
+  }
+  
+  /* Ensure images are perfectly centered within each item */
+  .gallery-item {
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /* Label styling - vertical text mode */
+  .gallery-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+    writing-mode: horizontal-tb;
+  }
+  
+  .gallery-label h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+  }
+  
+  .gallery-label p {
+    font-size: 0.7rem;
+    margin: 0.3rem 0 0;
+    opacity: 0.8;
+    display: none;
+  }
+  
+  /* Hover effect - expand to full width and show full image */
+  .gallery-item:hover {
+    flex: 4;
+    max-width: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery-item:hover .gallery-label {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    padding: 1.5rem;
+    text-align: left;
+    writing-mode: horizontal-tb;
+    backdrop-filter: blur(8px);
+  }
+  
+  .gallery-item:hover .gallery-label h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-item:hover .gallery-label p {
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  /* Optional overlay effect on hover */
+  .gallery-overlay-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .gallery-item:hover .gallery-overlay-hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .image-gallery-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .gallery-container {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    
+    .gallery-item {
+      min-width: 100%;
+      max-width: 100%;
+      height: 80px;
+      transition: height 0.3s ease;
+      background-position: center center;
+    }
+    
+    .gallery-label {
+      writing-mode: horizontal-tb;
+      text-align: center;
+      padding: 0.8rem 1rem;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    
+    .gallery-label p {
+      display: none;
+    }
+    
+    .gallery-item:hover {
+      flex: none;
+      height: 250px;
+      max-width: 100%;
+    }
+    
+    .gallery-item:hover .gallery-label {
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-label h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-label p {
+      display: block;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-gallery-section {
+      padding: 2rem 1rem;
+    }
+    
+    .gallery-item {
+      height: 70px;
+    }
+    
+    .gallery-item:hover {
+      height: 220px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .gallery-item {
+      height: 60px;
+    }
+    
+    .gallery-item:hover {
+      height: 200px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* Image Gallery Section - Smooth, Polite Animations */
+.image-gallery-section {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    /* Slow, smooth transition for flex expansion - 1.5 seconds */
+    transition: flex 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                max-width 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Default: compact vertical label view */
+    min-width: 120px;
+    max-width: 250px;
+    /* Prevent abrupt changes */
+    will-change: flex, max-width;
+  }
+  
+  /* Ensure images are perfectly centered within each item */
+  .gallery-item {
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /* Label styling - with smooth transitions */
+  .gallery-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    /* Smooth transitions for label changes - 1.5 seconds */
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(4px);
+    writing-mode: horizontal-tb;
+    /* Prevent text from changing abruptly */
+    transition-property: padding, background, backdrop-filter, text-align;
+  }
+  
+  .gallery-label h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+    transition: font-size 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-label p {
+    font-size: 0.7rem;
+    margin: 0.3rem 0 0;
+    opacity: 0;
+    /* Fade in smoothly on hover */
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                display 0s linear;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  /* Hover effect - expand slowly over 1.5 seconds */
+  .gallery-item:hover {
+    flex: 4;
+    max-width: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: flex 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                max-width 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.5s ease;
+  }
+  
+  .gallery-item:hover .gallery-label {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    padding: 1.5rem;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    transition: padding 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                background 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                backdrop-filter 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                text-align 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-item:hover .gallery-label h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    transition: font-size 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                margin-bottom 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-item:hover .gallery-label p {
+    opacity: 0.8;
+    visibility: visible;
+    height: auto;
+    transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 0s linear 0.3s;
+  }
+  
+  /* Optional overlay effect on hover - smooth transition */
+  .gallery-overlay-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+  
+  .gallery-item:hover .gallery-overlay-hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: background 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Prevent multiple hovers from causing jerky animations */
+  .gallery-item:not(:hover) {
+    transition: flex 1.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                max-width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .image-gallery-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .gallery-container {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    
+    .gallery-item {
+      min-width: 100%;
+      max-width: 100%;
+      height: 80px;
+      transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                  flex 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+      background-position: center center;
+    }
+    
+    .gallery-label {
+      writing-mode: horizontal-tb;
+      text-align: center;
+      padding: 0.8rem 1rem;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    
+    .gallery-label p {
+      display: none;
+    }
+    
+    .gallery-item:hover {
+      flex: none;
+      height: 250px;
+      max-width: 100%;
+      transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1),
+                  flex 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .gallery-item:hover .gallery-label {
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-label h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-label p {
+      display: block;
+      font-size: 0.75rem;
+      text-align: center;
+      opacity: 0.8;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-gallery-section {
+      padding: 2rem 1rem;
+    }
+    
+    .gallery-item {
+      height: 70px;
+    }
+    
+    .gallery-item:hover {
+      height: 220px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .gallery-item {
+      height: 60px;
+    }
+    
+    .gallery-item:hover {
+      height: 200px;
+    }
+    
+    .gallery-label h3 {
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Optional: Add a slight delay before starting the hover animation
+     to prevent accidental triggers when moving cursor quickly */
+  .gallery-item {
+    transition-delay: 0s;
+  }
+  
+  .gallery-item:hover {
+    transition-delay: 0s;
+  }
+  
+  /* Smooth scaling effect on the image itself for extra polish */
+  .gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+  }
+  
+  .gallery-item:hover::before {
+    transform: scale(1.05);
+  }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #c49a6c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* Hover Effect */
+  .btn-primary:hover {
+    background-color: #a87b4e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(196, 154, 108, 0.3);
+    color: #ffffff;
+  }
+
+  /* pages/home.css - Updated Gallery with Smooth Centered Zoom Animation */
+
+/* Image Gallery Section - Smooth Centered Zoom Animation */
+.image-gallery-section {
+    padding: 5rem 3rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    /* Smooth transition for all properties */
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Default compact state */
+    min-width: 120px;
+    max-width: 250px;
+    /* Ensure smooth scaling */
+    will-change: transform, box-shadow;
+  }
+  
+  /* Ensure images are perfectly centered within each item */
+  .gallery-item {
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  /* Inner pseudo-element for zoom effect - keeps image centered */
+  .gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+    border-radius: 12px;
+    pointer-events: none;
+  }
+  
+  /* Label styling - smooth transitions */
+  .gallery-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4));
+    color: white;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(4px);
+    writing-mode: horizontal-tb;
+    z-index: 2;
+  }
+  
+  .gallery-label h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+    transition: font-size 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-label p {
+    font-size: 0.7rem;
+    margin: 0.3rem 0 0;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  /* Hover effect - Smooth centered zoom with enhanced shadow */
+  .gallery-item:hover {
+    flex: 4;
+    max-width: none;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    transition: flex 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                max-width 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s ease;
+  }
+  
+  /* Image zoom effect on hover - smooth, centered scaling */
+  .gallery-item:hover::before {
+    transform: scale(1.08);
+    transition: transform 0.9s cubic-bezier(0.3, 0, 0.2, 1);
+  }
+  
+  .gallery-item:hover .gallery-label {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.5));
+    padding: 1.5rem;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    transition: padding 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                background 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                backdrop-filter 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                text-align 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-item:hover .gallery-label h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    transition: font-size 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                margin-bottom 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-item:hover .gallery-label p {
+    opacity: 0.85;
+    visibility: visible;
+    height: auto;
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                visibility 0s linear 0.2s;
+  }
+  
+  /* Overlay effect on hover - smooth fade */
+  .gallery-overlay-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .gallery-item:hover .gallery-overlay-hover {
+    background: rgba(0, 0, 0, 0.1);
+    transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Prevent multiple hovers from causing jerky animations */
+  .gallery-item:not(:hover) {
+    transition: flex 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                max-width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .gallery-item:not(:hover)::before {
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Responsive Design - Mobile view remains compact but smooth */
+  @media (max-width: 900px) {
+    .image-gallery-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .gallery-container {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .gallery-item {
+      min-width: 100%;
+      max-width: 100%;
+      height: 80px;
+      transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                  flex 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      background-position: center center;
+    }
+  
+    .gallery-item::before {
+      border-radius: 12px;
+    }
+  
+    .gallery-label {
+      writing-mode: horizontal-tb;
+      text-align: center;
+      padding: 0.8rem 1rem;
+    }
+  
+    .gallery-label h3 {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    .gallery-label p {
+      display: none;
+    }
+  
+    .gallery-item:hover {
+      flex: none;
+      height: 250px;
+      max-width: 100%;
+      transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+                  flex 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    /* Mobile zoom effect - subtle but smooth */
+    .gallery-item:hover::before {
+      transform: scale(1.05);
+    }
+  
+    .gallery-item:hover .gallery-label {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .gallery-item:hover .gallery-label h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .gallery-item:hover .gallery-label p {
+      display: block;
+      font-size: 0.75rem;
+      text-align: center;
+      opacity: 0.85;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-gallery-section {
+      padding: 2rem 1rem;
+    }
+  
+    .gallery-item {
+      height: 70px;
+    }
+  
+    .gallery-item:hover {
+      height: 220px;
+    }
+  
+    .gallery-label h3 {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* For very small screens */
+  @media (max-width: 480px) {
+    .gallery-item {
+      height: 60px;
+    }
+  
+    .gallery-item:hover {
+      height: 200px;
+    }
+  
+    .gallery-label h3 {
+      font-size: 0.75rem;
+    }
+    
+    /* Even smoother zoom on small screens */
+    .gallery-item:hover::before {
+      transform: scale(1.04);
+    }
+  }
+  
+  /* Optional: Add a subtle delay to prevent accidental triggers when moving cursor quickly */
+  .gallery-item {
+    transition-delay: 0s;
+  }
+  
+  .gallery-item:hover {
+    transition-delay: 0s;
+  }
+  
+  /* Smooth scaling effect on the image itself for extra polish */
+  .gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+  }
+  
+  /* Button styling - keeping consistent */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #c49a6c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Hover Effect for Button */
+  .btn-primary:hover {
+    background-color: #a87b4e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(196, 154, 108, 0.3);
+    color: #ffffff;
+  }
+
+  /* pages/home.css - Updated Carousel Section with Mobile Fix */
+
+/* Carousel Section - Full width and height */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    /* Critical fix: ensure proper flex behavior on all devices */
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+    /* Prevent any margin/padding from affecting width */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Prevent image from being distorted */
+    display: block;
+  }
+  
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .carousel-content {
+    color: white;
+    animation: fadeInUp 1s ease;
+    padding: 0 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .carousel-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+  }
+  
+  .dot.active {
+    background: #c49a6c;
+    width: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile Responsive - Critical fixes for mobile view */
+  @media (max-width: 768px) {
+    .carousel-section {
+      height: 100vh;
+      min-height: 100vh;
+    }
+    
+    .carousel-image-wrapper {
+      height: 100%;
+    }
+    
+    /* Ensure the transform works correctly on mobile */
+    .carousel-slide {
+      transform: translateX(calc(-100% * var(--slide-index, 0)));
+      /* Fallback to inline style which is already set */
+    }
+    
+    .carousel-content h2 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    
+    .carousel-content p {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .carousel-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    
+    .prev {
+      left: 10px;
+    }
+    
+    .next {
+      right: 10px;
+    }
+    
+    .carousel-dots {
+      bottom: 20px;
+      gap: 8px;
+    }
+    
+    .dot {
+      width: 8px;
+      height: 8px;
+    }
+    
+    .dot.active {
+      width: 20px;
+    }
+  }
+  
+  /* Tablet View */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-section {
+      height: 100vh;
+    }
+    
+    .carousel-content h2 {
+      font-size: 2.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small Mobile Devices */
+  @media (max-width: 480px) {
+    .carousel-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 0.8rem;
+    }
+    
+    .carousel-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Landscape Mode on Mobile */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .carousel-section {
+      height: 100vh;
+    }
+    
+    .carousel-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .carousel-content p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Ensure no white space around carousel */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .home {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Button styling - keeping consistent */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #c49a6c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  /* Hover Effect for Button */
+  .btn-primary:hover {
+    background-color: #a87b4e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(196, 154, 108, 0.3);
+    color: #ffffff;
+  }
+
+  
