@@ -571,7 +571,7 @@
   /* Sticky Background Section */
   .sticky-background {
     position: relative;
-    height: 700px;
+    height: 800px;
     background-image: url('https://plyneer.com/cdn/shop/articles/B0_5c915ff1-d38f-4d00-96fa-a2c6cc20324e.png?v=1743686859&width=2048');
     background-attachment: fixed;
     background-position: center;

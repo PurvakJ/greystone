@@ -203,6 +203,10 @@ const Home = () => {
                 <span className="stat-number">303</span>
                 <span className="stat-label">Greystone Semi Water Proof</span>
               </div>
+              <div className="industry-stat">
+                <span className="stat-number">3 Prime Series</span>
+                <span className="stat-label">Ultra Prime, Club Prime & Diamond Prime</span>
+              </div>
             </div>
             <Link to="/about" className="btn-primary-outline">Learn More</Link>
           </div>
