@@ -35,7 +35,7 @@ const Header = () => {
       <div className="header-top">
         <Link to="/" className="logo">
           <img 
-            src="https://i.postimg.cc/jjsx7jzb/Gemini-Generated-Image-10o14810o14810o1-removebg-preview.png" 
+            src="https://i.postimg.cc/tTYPNtK9/Gemini-Generated-Image-d8gvifd8gvifd8gv-removebg-preview.png" 
             alt="GreyStone Logo" 
             className={`logo-image ${isScrolled ? 'scrolled-logo' : 'transparent-logo'}`} 
           />

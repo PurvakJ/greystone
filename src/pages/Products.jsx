@@ -1,6 +1,7 @@
 // pages/Products.jsx
 import React, { useState } from 'react';
 import ProductCard from '../components/ProductCard';
+import ProductDetailModal from '../components/ProductDetailModal'; // Import the modal
 import { productsData } from '../data/productsData';
 import './product.css';
 
@@ -9,12 +10,26 @@ const Products = () => {
   const [sortBy, setSortBy] = useState('default');
   const [priceRange, setPriceRange] = useState('all');
   const [showFilters, setShowFilters] = useState(false);
-  const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
+  const [viewMode, setViewMode] = useState('grid');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product
+  const [showModal, setShowModal] = useState(false); // State for modal visibility
   
   const products = productsData.products;
   
   const categories = ['All', ...new Set(products.map(p => p.category))];
+  
+  // Handle product click
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+  
+  // Close modal
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedProduct(null);
+  };
   
   // Filter by search term
   let filteredProducts = products.filter(product => {
@@ -67,7 +82,6 @@ const Products = () => {
         <div className="products-hero-content">
           <h1>OUR PRODUCTS</h1>
           <p>Premium Quality Plywood for Every Need</p>
-
         </div>
       </section>
 
@@ -258,7 +272,9 @@ const Products = () => {
           {viewMode === 'grid' && (
             <div className="products-grid">
               {filteredProducts.map(product => (
-                <ProductCard key={product.id} product={product} />
+                <div key={product.id} onClick={() => handleProductClick(product)} style={{ cursor: 'pointer' }}>
+                  <ProductCard product={product} />
+                </div>
               ))}
             </div>
           )}
@@ -267,7 +283,12 @@ const Products = () => {
           {viewMode === 'list' && (
             <div className="products-list">
               {filteredProducts.map(product => (
-                <div key={product.id} className="product-list-item">
+                <div 
+                  key={product.id} 
+                  className="product-list-item"
+                  onClick={() => handleProductClick(product)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <div className="list-item-image">
                     <img src={product.image} alt={product.name} />
                   </div>
@@ -312,9 +333,16 @@ const Products = () => {
           )}
         </div>
       </section>
+
+      {/* Product Detail Modal */}
+      {showModal && selectedProduct && (
+        <ProductDetailModal 
+          product={selectedProduct} 
+          onClose={handleCloseModal} 
+        />
+      )}
     </div>
   );
 };
 
 export default Products;
-

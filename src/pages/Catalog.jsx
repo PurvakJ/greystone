@@ -1,13 +1,32 @@
 // pages/Catalog.jsx
 import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './catalog.css';
 
 const Catalog = () => {
-  const [searchTerm] = useState('');
-  const [selectedCategory] = useState('All');
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [isLoading, setIsLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(12);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
+
+  // Parse URL parameters on component mount
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const categoryParam = params.get('category');
+    if (categoryParam) {
+      setSelectedCategory(categoryParam);
+      // Scroll to catalog section
+      setTimeout(() => {
+        const catalogSection = document.querySelector('.catalog-grid-section');
+        if (catalogSection) {
+          catalogSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.search]);
 
   const catalogImages = [
     // ========================================
@@ -283,6 +302,25 @@ const Catalog = () => {
     setTimeout(() => setIsLoading(false), 1000);
   }, []);
 
+  // Clear URL parameter when category is changed manually
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+    // Update URL without reloading the page
+    if (category === 'All') {
+      navigate('/catalog', { replace: true });
+    } else {
+      navigate(`/catalog?category=${encodeURIComponent(category)}`, { replace: true });
+    }
+  };
+
+  // Clear URL parameter when search is cleared or changed
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    if (value === '' && selectedCategory === 'All') {
+      navigate('/catalog', { replace: true });
+    }
+  };
 
   return (
     <div className="catalog-page">
@@ -291,10 +329,62 @@ const Catalog = () => {
         <div className="catalog-hero-content">
           <h1>PRODUCT CATALOG</h1>
           <p>Browse Our Complete Collection</p>
-
         </div>
       </section>
 
+      {/* Filters Section */}
+      <section className="catalog-filters-section">
+        <div className="container">
+          <div className="catalog-filters">
+            <div className="search-box">
+              <input
+                type="text"
+                placeholder="Search catalog..."
+                value={searchTerm}
+                onChange={handleSearchChange}
+                className="catalog-search-input"
+              />
+              <span className="search-icon">🔍</span>
+              {searchTerm && (
+                <button className="clear-search" onClick={() => setSearchTerm('')}>✕</button>
+              )}
+            </div>
+            
+            <div className="category-filters">
+              <button
+                className={`category-filter-btn ${selectedCategory === 'All' ? 'active' : ''}`}
+                onClick={() => handleCategoryChange('All')}
+              >
+                All
+              </button>
+              <button
+                className={`category-filter-btn ${selectedCategory === 'Louvers' ? 'active' : ''}`}
+                onClick={() => handleCategoryChange('Louvers')}
+              >
+                Louvers
+              </button>
+              <button
+                className={`category-filter-btn ${selectedCategory === 'Fluted Louvers' ? 'active' : ''}`}
+                onClick={() => handleCategoryChange('Fluted Louvers')}
+              >
+                Fluted Louvers
+              </button>
+              <button
+                className={`category-filter-btn ${selectedCategory === 'Acrylic' ? 'active' : ''}`}
+                onClick={() => handleCategoryChange('Acrylic')}
+              >
+                Acrylic
+              </button>
+              <button
+                className={`category-filter-btn ${selectedCategory === 'Veneer' ? 'active' : ''}`}
+                onClick={() => handleCategoryChange('Veneer')}
+              >
+                Veneer
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Catalog Grid Section */}
       <section className="catalog-grid-section">
@@ -306,6 +396,15 @@ const Catalog = () => {
             </div>
           ) : (
             <>
+              {selectedCategory !== 'All' && (
+                <div className="category-badge">
+                  <span>Showing: {selectedCategory}</span>
+                  <button onClick={() => handleCategoryChange('All')} className="clear-category">
+                    Clear Filter ✕
+                  </button>
+                </div>
+              )}
+              
               <div className="catalog-stats">
                 <p>Showing {visibleImages.length} of {filteredImages.length} items</p>
               </div>
@@ -339,14 +438,22 @@ const Catalog = () => {
 
               {filteredImages.length === 0 && (
                 <div className="no-results">
-                  <p>No catalog items found matching "{searchTerm}"</p>
+                  <p>No catalog items found matching your criteria</p>
+                  <button 
+                    className="reset-catalog-btn"
+                    onClick={() => {
+                      setSearchTerm('');
+                      handleCategoryChange('All');
+                    }}
+                  >
+                    Reset Filters
+                  </button>
                 </div>
               )}
             </>
           )}
         </div>
       </section>
-
     </div>
   );
 };
