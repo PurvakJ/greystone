@@ -73,7 +73,7 @@ function Loader({ onLoadingComplete }) {
     <div className="loader-container">
       <div className="loader-wrapper">
         <img 
-          src="https://i.postimg.cc/tTYPNtK9/Gemini-Generated-Image-d8gvifd8gvifd8gv-removebg-preview.png" 
+          src="https://i.postimg.cc/FzPV5Mz4/Gemini-Generated-Image-qzhzksqzhzksqzhz-removebg-preview.png" 
           alt="Loading" 
           className="loader-image scale-small"
         />

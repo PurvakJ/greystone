@@ -234,7 +234,7 @@ export const productsData = {
       "size": "8×4 ft",
       "color": "White",
       "features": ["UV Stable", "Easy to Install", "Low Maintenance", "Modern Aesthetic"],
-      "image": "https://www.hugh-aluminum.com/wp-content/uploads/2024/06/aluminum-Louver.png",
+      "image": "https://nextleveldecor.in/cdn/shop/files/korealouvers_2F_5B_20_23438883_5D_01.jpg?v=1753111226",
       "inStock": true
     },
     {
@@ -295,14 +295,14 @@ export const productsData = {
     // ========================================
     {
       "id": 18,
-      "name": "ULTRA PRIME Plywood - 303 Grade (Semi Water Proof)",
+      "name": "ULTRA PRIME Plywood (Cold Water Proof)",
       "category": "Plywood",
-      "description": "Premium ULTRA PRIME series plywood with IS 303 certification. Semi water proof with superior strength for furniture and interiors.",
+      "description": "Premium ULTRA PRIME series plywood. Cold water proof with superior strength for furniture and interiors.",
       "price": "₹95/sq.ft",
       "thickness": "6mm, 9mm, 12mm, 16mm, 19mm",
       "size": "8×4 ft",
       "color": "Natural Teak",
-      "features": ["IS 303 Certified", "Semi Water Proof", "Termite Resistant", "ULTRA PRIME Series"],
+      "features": ["Cold Water Proof", "Termite Resistant", "ULTRA PRIME Series"],
       "image": "https://shamsrayan.com/wp-content/uploads/2025/03/commercial-plywood-01.png",
       "inStock": true
     },
