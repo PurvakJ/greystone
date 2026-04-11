@@ -3280,3 +3280,205 @@
     font-size: 0.8rem;
     opacity: 0.9;
 }
+/* pages/home.css - Add these styles for the Chaugath Premium Section */
+
+/* Chaugath Premium Section */
+.chaugath-premium-section {
+  padding: 5rem 3rem;
+  background: linear-gradient(135deg, #faf8f4 0%, #f0ebe3 100%);
+  overflow: hidden;
+}
+
+.chaugath-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.chaugath-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.chaugath-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.chaugath-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.chaugath-image:hover img {
+  transform: scale(1.03);
+}
+
+.chaugath-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.chaugath-badge {
+  display: inline-block;
+  background: #c49a6c;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.chaugath-content h2 {
+  font-size: 2.5rem;
+  color: #2c2418;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.chaugath-content h3 {
+  font-size: 1.2rem;
+  color: #c49a6c;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.chaugath-description {
+  color: #6b5a48;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.chaugath-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chaugath-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.chaugath-feature:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-check {
+  color: #c49a6c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: rgba(196, 154, 108, 0.1);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.chaugath-feature h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2c2418;
+  margin-bottom: 0.2rem;
+}
+
+.chaugath-feature p {
+  font-size: 0.7rem;
+  color: #8b7a64;
+  margin: 0;
+}
+
+.chaugath-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.chaugath-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #2c2418;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.guarantee-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive for Chaugath Section */
+@media (max-width: 900px) {
+  .chaugath-premium-section {
+      padding: 3rem 1.5rem;
+  }
+  
+  .chaugath-container {
+      flex-direction: column;
+      gap: 2rem;
+  }
+  
+  .chaugath-content h2 {
+      font-size: 2rem;
+  }
+  
+  .chaugath-features-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .chaugath-cta {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  
+  .chaugath-guarantee {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .chaugath-premium-section {
+      padding: 2rem 1rem;
+  }
+  
+  .chaugath-content h2 {
+      font-size: 1.6rem;
+  }
+  
+  .chaugath-content h3 {
+      font-size: 1rem;
+  }
+  
+  .chaugath-badge {
+      font-size: 0.65rem;
+  }
+}

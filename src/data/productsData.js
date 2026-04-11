@@ -549,7 +549,7 @@ export const productsData = {
       "size": "Height customizable",
       "color": "Natural Wood",
       "features": ["25 Year Guarantee", "Termite Proof", "Water Proof", "Rust Free", "High Density"],
-      "image": "https://5.imimg.com/data5/SELLER/Default/2025/8/536248666/TF/UA/WP/61789499/gl-8-5-feet-gi-door-frame-500x500.jpg",
+      "image": "https://www.openuptoperformance.com/wp-content/uploads/2024/08/Clipped-Corner-Doors-Thumbnail-Image.png",
       "inStock": true
     },
     {
@@ -562,7 +562,7 @@ export const productsData = {
       "size": "Height customizable",
       "color": "Natural Wood",
       "features": ["25 Year Guarantee", "Termite Proof", "Water Proof", "Rust Free", "High Density", "Heavy Duty"],
-      "image": "https://5.imimg.com/data5/SELLER/Default/2024/11/465533462/VC/HM/PH/11382107/aluminium-door-frames.jpg",
+      "image": "https://i.postimg.cc/HWzGBmXZ/Gemini-Generated-Image-11ijy311ijy311ij.png",
       "inStock": true
     },
     {
@@ -575,7 +575,7 @@ export const productsData = {
       "size": "Height customizable",
       "color": "Teak / Walnut",
       "features": ["25 Year Guarantee", "Termite Proof", "Water Proof", "Rust Free", "Designer Finish"],
-      "image": "https://manvikdoorframes.com/wp-content/uploads/2021/01/Untitled-design.jpg",
+      "image": "https://i.postimg.cc/L4DdNSLN/Gemini-Generated-Image-nvy5finvy5finvy5.png",
       "inStock": true
     }
   ]

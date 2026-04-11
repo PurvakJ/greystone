@@ -86,6 +86,16 @@ const Home = () => {
   // Updated handcrafted features with Greystone & Sanmaica
   const handcraftedFeatures = ["GREYSTONE PRECISE", "ENGINEERING", "25 YEAR GUARANTEE", "TERMITE & WATER PROOF"];
 
+  // Chaugath features data
+  const chaugathFeatures = [
+    { title: "Premium High Density", description: "Superior strength and durability for long-lasting frames" },
+    { title: "25 Year Guarantee", description: "Industry-leading warranty on all chaugath products" },
+    { title: "Termite Proof", description: "Advanced treatment for complete termite protection" },
+    { title: "Water Proof", description: "100% water resistant for all weather conditions" },
+    { title: "Rust Free", description: "Corrosion-resistant materials for lasting performance" },
+    { title: "Customizable Heights", description: "Available in 5×2.5 inch & 6×2.5 inch sizes" }
+  ];
+
   // Function to get random products
   const getRandomProducts = () => {
     const products = productsData.products;
@@ -181,6 +191,47 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* NEW: Chaugath Premium Frames Section */}
+      <section className="chaugath-premium-section">
+        <div className="chaugath-container">
+          <div className="chaugath-image">
+            <img 
+              src="https://i.postimg.cc/Bb0FmyPZ/Gemini-Generated-Image-4xl07i4xl07i4xl0-(1).jpg" 
+              alt="Greystone Chaugath Premium Frames"
+              loading="lazy"
+            />
+          </div>
+          <div className="chaugath-content">
+            <div className="chaugath-badge">PREMIUM QUALITY</div>
+            <h2>GREYSTONE CHAUGATH</h2>
+            <h3>Premium High Density Door Frames</h3>
+            <p className="chaugath-description">
+              Experience unmatched durability with our Greystone Chaugath premium door frames. 
+              Engineered for excellence, these frames combine superior strength with elegant design, 
+              making them the perfect choice for modern homes and commercial spaces.
+            </p>
+            <div className="chaugath-features-grid">
+              {chaugathFeatures.map((feature, index) => (
+                <div key={index} className="chaugath-feature">
+                  <span className="feature-check">✓</span>
+                  <div>
+                    <h4>{feature.title}</h4>
+                    <p>{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="chaugath-cta">
+              <Link to="/products" className="btn-primary">Explore Collection</Link>
+              <div className="chaugath-guarantee">
+                <span className="guarantee-icon">🏆</span>
+                <span>25 Year Guarantee</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
