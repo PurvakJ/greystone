@@ -549,7 +549,7 @@ export const productsData = {
       "size": "Height customizable",
       "color": "Natural Wood",
       "features": ["25 Year Guarantee", "Termite Proof", "Water Proof", "Rust Free", "High Density"],
-      "image": "https://www.openuptoperformance.com/wp-content/uploads/2024/08/Clipped-Corner-Doors-Thumbnail-Image.png",
+      "image": "https://i.postimg.cc/6pNG1NCB/Grey-Stone-branded-door-design.png",
       "inStock": true
     },
     {
@@ -562,7 +562,7 @@ export const productsData = {
       "size": "Height customizable",
       "color": "Natural Wood",
       "features": ["25 Year Guarantee", "Termite Proof", "Water Proof", "Rust Free", "High Density", "Heavy Duty"],
-      "image": "https://i.postimg.cc/HWzGBmXZ/Gemini-Generated-Image-11ijy311ijy311ij.png",
+      "image": "https://i.postimg.cc/P5k8Fk1T/Grey-Stone-logo-on-wooden-door.png",
       "inStock": true
     },
     {
