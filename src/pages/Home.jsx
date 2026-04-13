@@ -443,11 +443,11 @@ const Home = () => {
             <span className="stat-label">YEARS OF EXCELLENCE (Since 2020)</span>
           </div>
           <div className="stat">
-            <span className="stat-number">1270+</span>
+            <span className="stat-number">12.670+</span>
             <span className="stat-label">SATISFIED CLIENTS</span>
           </div>
           <div className="stat">
-            <span className="stat-number">8592+</span>
+            <span className="stat-number">38.592+</span>
             <span className="stat-label">SUCCESSFUL DELIVERIES</span>
           </div>
         </div>
