@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import { FaWhatsapp, FaInstagram, FaFacebook, FaPhone, FaEnvelope} from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaFacebook, FaPhone} from 'react-icons/fa';
 
 
 function Contact() {
@@ -76,10 +76,7 @@ function Contact() {
     window.location.href = `tel:${phone.replace(/[^0-9]/g, '')}`;
   };
 
-  // Function to handle email
-  const handleEmail = (email) => {
-    window.location.href = `mailto:${email}`;
-  };
+
 
   return (
     <div className="contact">
@@ -166,8 +163,6 @@ function Contact() {
       <section className="section hours-banner">
         <div className="container">
           <div className="hours-grid">
-            <div className="hours-item">
-            </div>
             <div className="hours-item highlight">
               <span className="hours-icon"><FaWhatsapp /></span>
               <div>
@@ -197,14 +192,6 @@ function Contact() {
       <section className="section contact-footer">
         <div className="container">
           <div className="contact-footer-grid">
-            <div className="contact-footer-item">
-              <FaEnvelope className="footer-icon" />
-              <h4>Email Us</h4>
-              <p>Chandangoyal97@gmail.com</p>
-              <button onClick={() => handleEmail(businessInfo.quickContact.email)} className="btn-link">
-                Send Email →
-              </button>
-            </div>
             <div className="contact-footer-item">
               <FaPhone className="footer-icon" />
               <h4>Call Us</h4>
