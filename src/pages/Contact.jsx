@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import { FaWhatsapp, FaInstagram, FaFacebook, FaPhone, FaEnvelope} from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+
 
 function Contact() {
   // Business information - Updated for Plywood/Wood Products Business
@@ -167,11 +167,6 @@ function Contact() {
         <div className="container">
           <div className="hours-grid">
             <div className="hours-item">
-              <span className="hours-icon"><MdEmail /></span>
-              <div>
-                <h4>Email ID</h4>
-                <p>Chandangoyal97@gmail.com</p>
-              </div>
             </div>
             <div className="hours-item highlight">
               <span className="hours-icon"><FaWhatsapp /></span>

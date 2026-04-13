@@ -1,23 +1,45 @@
 // pages/Products.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
-import ProductDetailModal from '../components/ProductDetailModal'; // Import the modal
+import ProductDetailModal from '../components/ProductDetailModal';
 import { productsData } from '../data/productsData';
 import './product.css';
 
 const Products = () => {
+  const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [sortBy, setSortBy] = useState('default');
   const [priceRange, setPriceRange] = useState('all');
   const [showFilters, setShowFilters] = useState(false);
   const [viewMode, setViewMode] = useState('grid');
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedProduct, setSelectedProduct] = useState(null); // State for selected product
-  const [showModal, setShowModal] = useState(false); // State for modal visibility
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   
   const products = productsData.products;
-  
   const categories = ['All', ...new Set(products.map(p => p.category))];
+  
+  // Apply filter from navigation state when component mounts or location changes
+  useEffect(() => {
+    if (location.state && location.state.filterCategory) {
+      const { filterCategory,} = location.state;
+      
+      // Set the category filter
+      setSelectedCategory(filterCategory);
+      
+      // Optional: Show a temporary notification or scroll to products
+      setTimeout(() => {
+        const productsSection = document.querySelector('.products-content');
+        if (productsSection) {
+          productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+      
+      // Clear the location state to prevent re-applying on subsequent visits
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
   
   // Handle product click
   const handleProductClick = (product) => {

@@ -1,7 +1,7 @@
 // components/Footer.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaPhone, FaEnvelope} from 'react-icons/fa';
+import { FaWhatsapp, FaPhone} from 'react-icons/fa';
 import './footer.css';
 
 const Footer = () => {
@@ -51,7 +51,6 @@ const Footer = () => {
               <FaPhone className="contact-icon" />
               <strong>Phone:</strong><br />
               <a href="tel:+918837822231">+91 88378 22231</a><br />
-              <a href="tel:+919530822202">+91 95308 22231</a> (Call Only)
             </p>
             <p>
               <FaWhatsapp className="contact-icon" />
@@ -59,11 +58,6 @@ const Footer = () => {
               <a href="https://wa.me/918837822231" target="_blank" rel="noopener noreferrer">
                 +91 88378 22231
               </a>
-            </p>
-            <p>
-              <FaEnvelope className="contact-icon" />
-              <strong>Email:</strong><br />
-              <a href="mailto:Chandangoyal97@gmail.com">Chandangoyal97@gmail.com</a>
             </p>
           </div>
         </div>

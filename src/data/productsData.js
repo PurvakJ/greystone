@@ -463,7 +463,7 @@ export const productsData = {
       "size": "8×4 ft",
       "color": "Multiple Options",
       "features": ["Heavy Duty", "Impact Resistant", "Commercial Grade", "1mm Thickness"],
-      "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcujtPRV17mUp_7wufYvb2LNAWZBK-wgQkHzp7DWd-D4kHVou-ZSSQ6M34ta0AuwRUXbNA1sllp_sMeoG9L__6elL-keINj7TjkA64VwnTsxona9TrRIKe0j8hftEfoMEIBDHvYtQ?key=VBWq_UpEEvPj52hH-s1ojw",
+      "image": "https://www.greenply.com:5001/originalfile1735285197909-9045.jpg",
       "inStock": true
     },
     {
